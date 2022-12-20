@@ -1,5 +1,5 @@
 let usernames = [
-        'esben',
+        'Esben',
         'Freja',
         'Oliver',
         'Mathias'
@@ -21,7 +21,7 @@ let names = [
 
 
 function redirect() {
-        window.location.pathname = ("html/oversigt.html");
+        window.location.pathname = ("/html/oversigt.html");
       }
 
 
