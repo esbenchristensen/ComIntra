@@ -21,7 +21,7 @@ let names = [
 
 
 function redirect() {
-        window.location.pathname = ("./html/oversigt.html");
+        window.location.pathname = ("ComIntra/html/oversigt.html");
       }
 
 
