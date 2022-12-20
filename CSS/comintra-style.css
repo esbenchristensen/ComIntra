@@ -57,17 +57,29 @@ margin-bottom: 2rem;
 }
 
 #idinput {
-    padding: 2rem 8rem 2rem 2rem;
+    padding: 1rem 7rem 1rem 1rem;
     width: auto;
     height: 3rem;
     border-radius: 1rem;
     border: 0;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .loginbutton {
+    background-color: #1980DE;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: 0;
+    margin-left: 1rem;
+    width: 6rem;
+    font-family: poppins;
+}
+
+#resetPasswordButton {
     background-color: #1980DE;
     color: white;
     font-size: 1.3rem;

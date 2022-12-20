@@ -1,8 +1,63 @@
-/* De ansatte glemmer ofte deres passwords og skal hele tiden gå op til IT-afdelingen 
-og få nulstillet det. Derfor vil de gerne have en online portal, hvor man kan 
-få nulstillet ens adgangskode, ved brug af sit unikke ID. Man skal skrive ens ID 
-og få en besked tilbage om at der er sendt en mail til den e-mail, som ID-passer på. 
-(Det er vigtigt at mailen bliver skrevet ud fx “Tak Karsten Birch- ID3201, 
-    der er sendt en mail til Kabi@Virksomhed.dk, med link til at nulstille din kode”) */
+let usernames = [
+        'esben',
+        'Freja',
+        'Oliver',
+        'Mathias'
+      ];
 
+let emails = [
+        'esben@gmail.com',
+        'Freja@gmail.com',
+        'Oliver@gmail.com',
+        'Mathias@gmail.com'
+      ];
+
+let names = [
+        'Esben Christensen',
+        'Freja Pedersen',
+        'Oliver Larsen',
+        'Mathias Steenberg'
+      ];
+
+
+function redirect() {
+        window.location.pathname = ("/HTML/oversigt.html");
+      }
+
+
+function login() {
+
+        let idinput = document.getElementById('idinput').value.toLowerCase();
+        localStorage.setItem("idinput", idinput);
+
+
+        for (let i = 0; i < usernames.length; i++) {
+            if (idinput === usernames[i]) {
+                redirect();
+                alert("Logger ind!");
+                break;
+            }
+        }
+    }
+
+
+let activeUserId = localStorage.getItem("idinput");
+
+let activeUserPlace = (usernames.indexOf(activeUserId));
+
+let activeUserEmail = (emails.at(activeUserPlace));
+
+let activeUserName = (names.at(activeUserPlace));
+
+let activeUserInfo = activeUserId + " " + activeUserEmail + " " + activeUserName;
+
+console.log(activeUserInfo)
+
+
+document.getElementById("activeUserName").innerHTML = activeUserName;
+
+
+function passwordReset() {
+  document.getElementById("passwordIsReset").innerHTML = activeUserName + " der er sendt et nulstillingslink til din mail " + activeUserEmail;
+}
 
