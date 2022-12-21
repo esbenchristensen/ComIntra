@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-fluid{
+  padding: 1% 10%;
+  padding-top: 8rem;
+  margin-left: 300px ;
+}
+
+.oversigt {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+body {
+  min-height: 100%;
+  background-color: #E2EBF1;
+  color: black;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #E2EBF1;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+  color: white;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+nav .sidebar {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 340px;
+  padding: 20px 0;
+  background-color: #29268D;
+}
+
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+
+.bottom-content {
+
+  padding: 30px;
+}
+
+.bottom-content:hover {
+  padding: 30px;
+}
+
+.sidebar-content .list {
+  list-style: none;
+}
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.lists .nav-link:hover {
+  background-color: #1980DE;
+}
+.nav-link .icon {
+  margin-right: 14px;
+  font-size: 1.6rem;
+  color: white;
+}
+.nav-link .link {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 300;
+}
+
+#resetPasswordButton {
+  background-color: #1980DE;
+  color: white;
+  font-size: 1.0rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 7px;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+  form {
+
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  }
+  
+  label {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  }
+  
+  input[type="range"] {
+  width: 50%;
+  }
+  
+  #passwordBtn {
+  margin-top: 20px;
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  background-color: #1980DE;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  }
+
+  #passwordBox {
+  margin-left: 0rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  }
+
+  #passwordp {
+  margin-top: 1rem;
+  font-weight: 700;
+  }
+
+  .checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    background-color: #1980DE;
+  }
+
+  .inputfield {
+    display: flex;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+    padding-top: 0.6rem;
+    border-radius: 2rem;
+    height: 3rem;
+    min-width: 25rem;
+    max-width: 100rem;
+    text-align: left;
+    color: black;
+    font-size: 1.1rem;
+  }
+
+  .avatar {
+    margin-left: 0.5rem;
+    margin-bottom: 0.6rem;
+  }
+
+
+
+  
+
+  
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
