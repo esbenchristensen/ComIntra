@@ -32,7 +32,7 @@
               <li class="list">
                 <a href="oversigt.html" class="nav-link">
                   <i class="bx bx-stats icon"></i>
-                  <span class="link">Oversigt</span>
+                  <span class="link">KPI Oversigt</span>
                 </a>
               </li>
               <li class="list">
@@ -45,6 +45,12 @@
                 <a href="password-reset.html" class="nav-link">
                   <i class="bx bx-reset icon"></i>
                   <span class="link">Nulstil password</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="netvaerk.html" class="nav-link">
+                  <i class="bx bx-network-chart icon"></i>
+                  <span class="link">Netværksoversigt</span>
                 </a>
               </li>
             </ul>
@@ -63,6 +69,13 @@
     </header>
 
     <section>
+      <div class="containerprofile">
+        <p class="profilep"><span id="activeUserName"></span></p>
+        <img
+          class="profilepicture"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABB1JREFUaEPtmf2xjUEMxnMrQAWoABWgAlSAClABKkAF3ApQASpABagAFTC/mTcmJ2+SzZ73nDF35uave+7ZzeZJnnzsnhM543Jyxu2XcwD/O4KHjMBFEbkjIrdE5IqI8Pn6AvCLiPwSke8i8lFE3i+fN+PfCgAj74vIA2Ns1yhAvRGR0y1gtgDA8GeLt7tGR+uICnoAMi37AIAWbw9guDcWIPdEhMi0ZRYAVHldaIfbcFw5r8YAWnOCHCFXMnm4UKsFYgbACxF5HGj9vVAAPpOoHQEMzoA6F4INL0XkSUdRFwAKHwUKn4sI33UN9yoAglOeBrpfJQ7bWdoBENEGr99d6NJx1GgNuoigj8aQTiMAcPezOx3j4XGWbMpx9vI3onmhORIBYj3rLAgie7tK7BGAb67ajIzPqGYNhvdQrwuC6nQ1C2EFIKIOZe5dooyIXBtxZfmetTeStdCJMm0lpVIGgOSCOowEKngN70XC/6NErPDM6CMKAF4ViwwAlYGyqQJ1ABNVmyhPvi5gNVp4FZA+QhgV5RIOxGibD5RVKLojGQC8r4MYG8LNiybPe4y3e+2BnmZVqfRR/WSKwj+dEQDQ/3RALxW1nspx06yv8sTzOzRq0dWyIwLgk5fSx8GZQCsb6gqsN4q9rM8ECtqxY5XMEQAaCpOmSkUf1mwBQG4BKhOfi0ysOLikkKcEjYT/ZXIsCnEejfCDOXhFuSgCPoGzSqF6fRJXNX4midHvK9xKdwTgj3P1qFtHZZSDqCLkDxQhyfnsq9PIOZhS2nMIABxy6EZmfTgNwIe54yUOnBklql5hjffRbeXAbBLbAzuRqEYIXyj2SmKflMOZ3J3KofQNvGefVYgQdb2qaB6AL6Orzh3lgPfiqJEVFXbzV76RraIXAYiqStVd1Uo8T7XRS0zVN+DyKBLRKLHKx6xE+oSsujF0YXK1o3fH9Uyb6M3uF54+YeJ3x2nGBW5FfpzOXio6AGwj9C8QeJ/boB0zpsZpvIkCK55/netjF4hPzqia4UCitiNVl40M1FHZlzdVyrAFJbJnFjwK5eywqHt15oqulOm9oQLAYeTCZQNZXwmgjk3WH8vnlYeSEBBhktjq5jM0YXiz1EE3hSV0ymjOyTxt7Rq9VGQ0ip5RorXlNDwCgMIR11czepf4y2NWRCdVMXyd6wAYgaiukCMsEd/bxrOwC4C12cs03CRKRGImB3hrRWd0I2uPLzMAKhDqNa6jWoXotlbo0lqFdq6Fbl3b+NkI6DkkH4Z2XuG0clT3XtVLpwXYUX/gsM6i2dDuo/f9Efd9FYOC2atfqWuWQl6Z/lABEFvTOwCo7xg+88PISu9WAFahPqfTOwBGs1JQGEuCQykalj63d4AeNQKbDdiq4JAR2GrLXvvPAezltgNu+gtIuvoxMtfCoAAAAABJRU5ErkJggg=="
+        />
+      </div>
       <div class="container-fluid">
         <div class="oversigt">
           <h1>Virksomhedens Netværk</h1>
@@ -85,21 +98,183 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row">InterComRouter</th>
+              <th scope="row" rowspan="2">InterComRouter</th>
               <td>G0/0/0</td>
               <td>10.1.1.1</td>
               <td>255.255.255.192</td>
             </tr>
             <tr>
-              <th scope="row"></th>
-              <td>G0/0/0</td>
+              <td scope="row">G0/0/0</td>
               <td>10.1.1.65</td>
               <td>255.255.255.128</td>
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <th scope="row">Lager</th>
+              <td>VLAN1</td>
+              <td>10.1.1.2</td>
+              <td>255.255.255.192</td>
+              <td>10.1.1.1</td>
+            </tr>
+            <tr>
+              <th scope="row">SwitchHub</th>
+              <td>VLAN1</td>
+              <td>10.1.1.66</td>
+              <td>255.255.255.128</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">HR</th>
+              <td>VLAN1</td>
+              <td>10.1.1.67</td>
+              <td>255.255.255.224</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">IT</th>
+              <td>VLAN1</td>
+              <td>10.1.1.97</td>
+              <td>255.255.255.224</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">Salg</th>
+              <td>VLAN1</td>
+              <td>10.1.1.129</td>
+              <td>255.255.255.224</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">Kontorgang</th>
+              <td>VLAN1</td>
+              <td>10.1.1.161</td>
+              <td>255.255.255.240</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">CEO</th>
+              <td>VLAN1</td>
+              <td>10.1.1.177</td>
+              <td>255.255.255.240</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">Lager1</th>
+              <td>FE0</td>
+              <td>10.1.1.3</td>
+              <td>255.255.255.192</td>
+              <td>10.1.1.1</td>
+            </tr>
+            <tr>
+              <th scope="row">Lager2</th>
+              <td>FE0</td>
+              <td>10.1.1.4</td>
+              <td>255.255.255.192</td>
+              <td>10.1.1.1</td>
+            </tr>
+            <tr>
+              <th scope="row">Lager3</th>
+              <td>FE0</td>
+              <td>10.1.1.5</td>
+              <td>255.255.255.192</td>
+              <td>10.1.1.1</td>
+            </tr>
+            <tr>
+              <th scope="row">Lager4</th>
+              <td>FE0</td>
+              <td>10.1.1.6</td>
+              <td>255.255.255.192</td>
+              <td>10.1.1.1</td>
+            </tr>
+            <tr>
+              <th scope="row">PDA1-12</th>
+              <td>Wireless</td>
+              <td>10.1.1.24-35</td>
+              <td>255.255.255.192</td>
+              <td>10.1.1.1</td>
+            </tr>
+            <tr>
+              <th scope="row">PrinterLager1</th>
+              <td>FE0</td>
+              <td>10.1.1.61</td>
+              <td>255.255.255.192</td>
+              <td>10.1.1.1</td>
+            </tr>
+            <tr>
+              <th scope="row">PrinterLager2</th>
+              <td>FE0</td>
+              <td>10.1.1.62</td>
+              <td>255.255.255.192</td>
+              <td>10.1.1.1</td>
+            </tr>
+            <tr>
+              <th scope="row">HR1</th>
+              <td>FE0</td>
+              <td>10.1.1.68</td>
+              <td>255.255.255.224</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">HR2</th>
+              <td>FE0</td>
+              <td>10.1.1.69</td>
+              <td>255.255.255.224</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">IT1</th>
+              <td>FE0</td>
+              <td>10.1.1.98</td>
+              <td>255.255.255.224</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">IT2</th>
+              <td>FE0</td>
+              <td>10.1.1.99</td>
+              <td>255.255.255.224</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">IT3</th>
+              <td>FE0</td>
+              <td>10.1.1.100</td>
+              <td>255.255.255.224</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">Salg1</th>
+              <td>FE0</td>
+              <td>10.1.1.130</td>
+              <td>255.255.255.224</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">Salg2</th>
+              <td>FE0</td>
+              <td>10.1.1.131</td>
+              <td>255.255.255.224</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">Salg3</th>
+              <td>FE0</td>
+              <td>10.1.1.132</td>
+              <td>255.255.255.224</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">PrinterKontor</th>
+              <td>FE0</td>
+              <td>10.1.1.174</td>
+              <td>255.255.255.240</td>
+              <td>10.1.1.65</td>
+            </tr>
+            <tr>
+              <th scope="row">CEO1</th>
+              <td>FE0</td>
+              <td>10.1.1.178</td>
+              <td>255.255.255.240</td>
+              <td>10.1.1.65</td>
             </tr>
           </tbody>
         </table>

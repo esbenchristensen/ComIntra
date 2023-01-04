@@ -63,6 +63,8 @@ function passwordReset() {
 }
 
 
+/* Send reset email vha. ElasticEmail og Smptp */
+
 function sendEmail() {
     Email.send({
         Host : "smtp.elasticemail.com",
