@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oversigt</title>
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <span class="logo-name">ComIntra</span>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <span class="logo-name">ComIntra</span>
+          </div>
+
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="oversigt.html" class="nav-link">
+                  <i class="bx bx-stats icon"></i>
+                  <span class="link">Oversigt</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="passwordgenerator.html" class="nav-link">
+                  <i class="bx bx-key icon"></i>
+                  <span class="link">Generer password</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="password-reset.html" class="nav-link">
+                  <i class="bx bx-reset icon"></i>
+                  <span class="link">Nulstil password</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="bottom-content lists">
+              <li class="list">
+                <a href="index.html" class="nav-link logout">
+                  <i class="bx bx-log-out icon"></i>
+                  <span class="link">Log ud</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container-fluid">
+        <div class="oversigt">
+          <h1>Virksomhedens Netværk</h1>
+          <p>Få et overblik over virksomhedens netværksdata</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="dataTables">
+      <div class="container-fluid dataTable1">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Device</th>
+              <th scope="col">Interface</th>
+              <th scope="col">IP Address</th>
+              <th scope="col">Subnet Mask</th>
+              <th scope="col">Defualt Gateway</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">InterComRouter</th>
+              <td>G0/0/0</td>
+              <td>10.1.1.1</td>
+              <td>255.255.255.192</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td>G0/0/0</td>
+              <td>10.1.1.65</td>
+              <td>255.255.255.128</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script type="module" src="comintra-script.js"></script>
+  </body>
+</html>

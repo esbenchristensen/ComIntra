@@ -13,6 +13,16 @@
   margin-left: 300px ;
 }
 
+.dataTable1 {
+  padding-top: 2rem;
+  padding-right: 5rem;
+}
+
+.table {
+  margin-right: 5rem;
+  width: 50rem;
+}
+
 .oversigt {
   font-size: 1.1rem;
   margin-bottom: 3rem;
