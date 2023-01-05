@@ -42,7 +42,8 @@
 .container-fluid{
   padding: 1% 10%;
   padding-top: 8rem;
-  margin-left: 300px ;
+  padding-left: 400px ;
+  width: auto;
 }
 
 .dataTable1 {
@@ -58,7 +59,7 @@
 .oversigt {
   font-size: 1.1rem;
   margin-bottom: 3rem;
-  width: 40rem;
+  width: 4;
 }
 
 h1 {
