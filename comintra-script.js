@@ -56,6 +56,8 @@ console.log(activeUserInfo)
 
 
 document.getElementById("activeUserName").innerHTML = activeUserName;
+document.getElementsById("userInfoUserName").innerHTML = "hello";
+
 
 
 function passwordReset() {
