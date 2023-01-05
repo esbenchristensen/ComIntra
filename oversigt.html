@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="kpi.css" />
   </head>
   <body>
     <header>
@@ -78,15 +79,40 @@
       </div>
       <div class="container-fluid">
         <div class="oversigt">
-          <h1>
-            Velkommen til ComIntra, <span id="activeUserName"></span>
-            <img class="avatar" src="avatar.png" alt="" widt="35px" height="35px" />
-          </h1>
-          <p>Med ComIntra kan du få adgang til virksomhedens interne værktøjer.</p>
+          <h1>Velkommen til ComIntra</h1>
+          <p>Her får du en oversigt over virksomhedens KPI'er.</p>
+        </div>
+
+        <div id="tables">
+          <table id="avgmed">
+            <tr>
+              <th></th>
+              <th>Ordrer</th>
+              <th>Præcision</th>
+              <th>Uheld</th>
+            </tr>
+          </table>
+          <table id="kpitabel">
+            <tr>
+              <th>
+                <button type="button" id="btnSortDay">Dag</button>
+              </th>
+              <th>
+                <button type="button" id="btnSortOrders">Ordrer</button>
+              </th>
+              <th>
+                <button type="button" id="btnSortPrecision">Præcision</button>
+              </th>
+              <th>
+                <button type="button" id="btnSortErrors">Uheld</button>
+              </th>
+            </tr>
+          </table>
         </div>
       </div>
     </section>
 
+    <script defer src="kpi.js"></script>
     <script type="module" src="comintra-script.js"></script>
   </body>
 </html>
