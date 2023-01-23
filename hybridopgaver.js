@@ -60,7 +60,7 @@ randomNumber.addEventListener("click", randomNumberFunc);
 
 function randomNumberFunc() {
   console.log(Math.ceil(Math.random() * 10));
-  alert("Tjek din consol.");
+  alert("Tjek din consol.+");
 }
 
 /* Lav en knap som afspiller en lyd når man trykker på den */

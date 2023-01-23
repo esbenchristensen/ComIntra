@@ -11,7 +11,7 @@ let names = ["Esben Christensen", "Freja Pedersen", "Oliver Larsen", "Mathias St
 let profilePictures = ["logo.png", "Freja Pedersen", "Oliver Larsen", "Mathias Steenberg"];
 
 function redirect() {
-  window.location.pathname = "/dashboard.html";
+  window.location.pathname = "Projekt/dashboard.html";
 }
 
 function login() {
