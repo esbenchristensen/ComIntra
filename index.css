@@ -1,10 +1,15 @@
 #navbar {
-    background-color: #29268D;
-    color: white;
+    color: #F1F1FA;
 }
 
 .container-fluid{
-    padding: 1% 15%;
+    padding: 1% 5%;
+    align-items: center;
+    text-align: center;
+}
+
+.container-fluid-nav{
+    padding: 1% 5%;
 }
 
 body{
@@ -13,7 +18,7 @@ body{
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
 }
 
 /* Navigationbar */
@@ -33,7 +38,7 @@ p {
 }
 
 .nav-link{
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     font-family: "Poppins";
     font-weight: 100;
 }
@@ -44,20 +49,26 @@ p {
     background-color: #E2EBF1;
     color: black;
     padding-top: 10rem;
-    text-align: center;
 }
 
 
 .velkommenh1 {
     font-size: 2rem;
 margin-bottom: 1rem;
-font-weight: 500;
+font-weight: 600;
 margin-bottom: 2rem;
+color: #1C285B;
 }
 
 .login {
     font-size: 1.4rem;
     font-weight: 300;
+    background-color: white;
+    height: 20rem;
+    max-width: fit-content;
+    margin: auto;
+    padding: 4rem;
+    border-radius: 10px;
 }
 
 #idinput {
@@ -69,29 +80,19 @@ margin-bottom: 2rem;
     font-size: 1.1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    background-color: #F4F4F4;
 }
 
 .loginbutton {
-    background-color: #1980DE;
+    background-color: #2FB98D;
     color: white;
     font-size: 1.1rem;
-    padding: 0.8rem;
+    padding: 0.7rem;
     border-radius: 1rem;
     border: 0;
     margin-left: 1rem;
     width: 6rem;
     font-family: poppins;
-}
-
-#resetPasswordButton {
-    background-color: #1980DE;
-    color: white;
-    font-size: 1.3rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    border: 0;
-    margin-left: 1rem;
-    width: 7rem;
 }
 
 

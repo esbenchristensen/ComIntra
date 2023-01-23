@@ -24,15 +24,15 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="comintra-style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
     <!-- Header -->
 
     <section id="navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="">ComIntra</a>
+      <div class="container-fluid-nav">
+        <img style="height: 50px; width: auto" src="logo.png" alt="" />
       </div>
     </section>
 
@@ -41,18 +41,18 @@
     <section class="loginsection">
       <div class="container-fluid">
         <div class="login">
-          <h1 class="velkommenh1">Velkommen til ComIntra</h1>
-          <p>Indtast dit ComIntra ID for at få adgang til ComIntra.</p>
+          <h1 class="velkommenh1">Din Webportal</h1>
+          <p>Indtast dit bruger-id for at logge ind.</p>
           <form>
-            <input id="idinput" type="password" placeholder="Indtast ComIntra ID" />
+            <input id="idinput" type="password" placeholder="Indtast ID" />
             <input class="loginbutton" onclick="login()" type="submit" value="Login" />
           </form>
-          <div><p style="color: red; font-weight: 700" id="wrongpassword"></p></div>
         </div>
       </div>
     </section>
 
-    <script src="comintra-script.js"></script>
+    <script src="index.js"></script>
+    <script src="opgaver.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
